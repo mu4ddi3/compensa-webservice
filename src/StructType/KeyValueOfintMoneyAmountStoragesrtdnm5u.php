@@ -1,0 +1,98 @@
+<?php
+
+namespace Mu4ddi3\Compensa\Webservice\StructType;
+
+use \WsdlToPhp\PackageBase\AbstractStructBase;
+
+/**
+ * This class stands for KeyValueOfintMoneyAmountStoragesrtdnm5u StructType
+ * @subpackage Structs
+ */
+class KeyValueOfintMoneyAmountStoragesrtdnm5u extends AbstractStructBase
+{
+    /**
+     * The Key
+     * @var int
+     */
+    public $Key;
+    /**
+     * The Value
+     * Meta informations extracted from the WSDL
+     * - nillable: true
+     * @var \Mu4ddi3\Compensa\Webservice\StructType\MoneyAmountStorage
+     */
+    public $Value;
+    /**
+     * Constructor method for KeyValueOfintMoneyAmountStoragesrtdnm5u
+     * @uses KeyValueOfintMoneyAmountStoragesrtdnm5u::setKey()
+     * @uses KeyValueOfintMoneyAmountStoragesrtdnm5u::setValue()
+     * @param int $key
+     * @param \Mu4ddi3\Compensa\Webservice\StructType\MoneyAmountStorage $value
+     */
+    public function __construct($key = null, \Mu4ddi3\Compensa\Webservice\StructType\MoneyAmountStorage $value = null)
+    {
+        $this
+            ->setKey($key)
+            ->setValue($value);
+    }
+    /**
+     * Get Key value
+     * @return int|null
+     */
+    public function getKey()
+    {
+        return $this->Key;
+    }
+    /**
+     * Set Key value
+     * @param int $key
+     * @return \Mu4ddi3\Compensa\Webservice\StructType\KeyValueOfintMoneyAmountStoragesrtdnm5u
+     */
+    public function setKey($key = null)
+    {
+        // validation for constraint: int
+        if (!is_null($key) && !is_numeric($key)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a numeric value, "%s" given', gettype($key)), __LINE__);
+        }
+        $this->Key = $key;
+        return $this;
+    }
+    /**
+     * Get Value value
+     * @return \Mu4ddi3\Compensa\Webservice\StructType\MoneyAmountStorage|null
+     */
+    public function getValue()
+    {
+        return $this->Value;
+    }
+    /**
+     * Set Value value
+     * @param \Mu4ddi3\Compensa\Webservice\StructType\MoneyAmountStorage $value
+     * @return \Mu4ddi3\Compensa\Webservice\StructType\KeyValueOfintMoneyAmountStoragesrtdnm5u
+     */
+    public function setValue(\Mu4ddi3\Compensa\Webservice\StructType\MoneyAmountStorage $value = null)
+    {
+        $this->Value = $value;
+        return $this;
+    }
+    /**
+     * Method called when an object has been exported with var_export() functions
+     * It allows to return an object instantiated with the values
+     * @see AbstractStructBase::__set_state()
+     * @uses AbstractStructBase::__set_state()
+     * @param array $array the exported values
+     * @return \Mu4ddi3\Compensa\Webservice\StructType\KeyValueOfintMoneyAmountStoragesrtdnm5u
+     */
+    public static function __set_state(array $array)
+    {
+        return parent::__set_state($array);
+    }
+    /**
+     * Method returning the class name
+     * @return string __CLASS__
+     */
+    public function __toString()
+    {
+        return __CLASS__;
+    }
+}

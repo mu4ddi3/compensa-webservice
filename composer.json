@@ -1,0 +1,16 @@
+{
+  "name": "mu4ddi3/compensa-webservice",
+  "license": "",
+  "description": "Package generated from http://cppl.services.bro01.itis.pl/Motor/MotorService.svc/true?singleWsdl using wsdltophp/packagegenerator",
+  "require": {
+    "php": ">=5.3.3",
+    "ext-soap": "*",
+    "wsdltophp/packagebase": "~2.0",
+    "ext-dom": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mu4ddi3\\Compensa\\Webservice\\": "./src\\"
+    }
+  }
+}
