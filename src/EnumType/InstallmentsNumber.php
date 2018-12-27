@@ -2,11 +2,14 @@
 
 namespace Mu4ddi3\Compensa\Webservice\EnumType;
 
+use Mu4ddi3\Compensa\Webservice\StructType\ObjectEnum;
+
 /**
  * This class stands for InstallmentsNumber EnumType
  * Meta informations extracted from the WSDL
  * - nillable: true
  * - type: tns:InstallmentsNumber
+ *
  * @subpackage Enumerations
  */
 class InstallmentsNumber extends ObjectEnum
