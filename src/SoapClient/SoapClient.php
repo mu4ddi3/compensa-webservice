@@ -123,7 +123,7 @@ class SoapClient extends \SoapClient
                 foreach ($in as $i) {
                     if ($i->nodeValue === '') {
                         //                        $i->setAttributeNs('xsj', 'nil', 'true');
-                        $i->setAttributeNode(new DOMAttr('xsi:nil', 'true'));
+                        $i->setAttributeNode(new \DOMAttr('xsi:nil', 'true'));
                     }
                 }
 
