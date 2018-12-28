@@ -44,12 +44,12 @@ class SoapClient extends \SoapClient
         $this->fixInstallmentsNumber($request);
         $dom->loadXML($this->__getLastRequest());
 
-        $dom->formatOutput = true;
-        $xml = $dom->saveXML();
-        echo '<span>Request</span>';
-        echo '<textarea rows="15" cols="80" style="border:none;">';
-        echo htmlspecialchars($xml);
-        echo '</textarea>';
+//        $dom->formatOutput = true;
+//        $xml = $dom->saveXML();
+//        echo '<span>Request</span>';
+//        echo '<textarea rows="15" cols="80" style="border:none;">';
+//        echo htmlspecialchars($xml);
+//        echo '</textarea>';
 
         //ODPALENIE RZECZYWISTE
         //$response = parent::__doRequest($request, $location, $action, $version);
@@ -70,14 +70,14 @@ class SoapClient extends \SoapClient
         //        $this->removeEmptyTags(response);
 
         //DEBUG NA EKRAN
-        $dom2 = new \DOMDocument();
-        $dom2->loadXML($response);
-        $dom2->formatOutput = true;
-        $xml2 = $dom2->saveXML();
-        echo '<span>Response</span>';
-        echo '<textarea rows="15" cols="80" style="border:none;">';
-        echo htmlspecialchars($xml2);
-        echo '</textarea>';
+//        $dom2 = new \DOMDocument();
+//        $dom2->loadXML($response);
+//        $dom2->formatOutput = true;
+//        $xml2 = $dom2->saveXML();
+//        echo '<span>Response</span>';
+//        echo '<textarea rows="15" cols="80" style="border:none;">';
+//        echo htmlspecialchars($xml2);
+//        echo '</textarea>';
 
 
         return $response;
